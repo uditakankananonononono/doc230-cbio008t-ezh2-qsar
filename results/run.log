@@ -1,0 +1,128 @@
+{
+ "d1": {
+  "n_compounds": 2559,
+  "n_measurements": 5265,
+  "n_patents": 36,
+  "pIC50_mean": 7.3,
+  "pIC50_sd": 1.2,
+  "top_patent_share": 0.152
+ },
+ "d2": {
+  "ridge": {
+   "spearman": 0.912,
+   "rmse": 0.489
+  },
+  "rf": {
+   "spearman": 0.917,
+   "rmse": 0.469
+  },
+  "mlp": {
+   "spearman": 0.896,
+   "rmse": 0.531
+  }
+ },
+ "d3": {
+  "ridge": {
+   "spearman": 0.569,
+   "rmse": 1.041
+  },
+  "rf": {
+   "spearman": 0.522,
+   "rmse": 1.04
+  },
+  "mlp": {
+   "spearman": 0.651,
+   "rmse": 1.022
+  }
+ },
+ "d3_best": "mlp",
+ "d3_gate": true,
+ "d4_gate_mlp_beats_rf": true,
+ "d5": {
+  ">=0.7": {
+   "n": 562,
+   "spearman": 0.777,
+   "rmse": 0.687
+  },
+  "0.5-0.7": {
+   "n": 1379,
+   "spearman": 0.692,
+   "rmse": 0.835
+  },
+  "<0.5": {
+   "n": 618,
+   "spearman": -0.146,
+   "rmse": 1.58
+  }
+ },
+ "d6": {
+  "ridge": {
+   "auroc": 0.783,
+   "top10_recall": 0.152
+  },
+  "rf": {
+   "auroc": 0.766,
+   "top10_recall": 0.155
+  },
+  "mlp": {
+   "auroc": 0.818,
+   "top10_recall": 0.164
+  },
+  "base_rate": 0.601
+ },
+ "d7": {
+  "m2": {
+   "spearman": 0.522,
+   "rmse": 1.04
+  },
+  "m3c": {
+   "spearman": 0.482,
+   "rmse": 1.051
+  },
+  "maccs": {
+   "spearman": 0.433,
+   "rmse": 1.057
+  },
+  "rdk": {
+   "spearman": 0.601,
+   "rmse": 0.978
+  }
+ },
+ "d8": {
+  "n_compounds": 993,
+  "spearman": 0.969,
+  "mae": 0.116,
+  "rmse_between_assays": 0.248
+ },
+ "d9": {
+  "tazemetostat": {
+   "CID": 66558664,
+   "in_data": false,
+   "measured": null,
+   "LPO_pred_rf": null
+  },
+  "GSK126": {
+   "CID": 68210102,
+   "in_data": true,
+   "measured": 8.79,
+   "LPO_pred_rf": 6.49
+  },
+  "EPZ005687": {
+   "CID": 60160561,
+   "in_data": false,
+   "measured": null,
+   "LPO_pred_rf": null
+  },
+  "CPI-1205": {
+   "CID": 78320408,
+   "in_data": false,
+   "measured": null,
+   "LPO_pred_rf": null
+  }
+ },
+ "d10_n_scaffolds": 1029,
+ "d10_scaffold_rf": {
+  "spearman": 0.911,
+  "rmse": 0.498
+ }
+}
